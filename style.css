@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Thasadith', sans-serif;
+    background-color: rgb(248, 248, 248);
+    position: relative;
+}
+h1{
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+h2{
+    font-size: 21px;
+}
+.btn{
+    border: rgb(227, 242, 236) 1px solid;
+}
+
+
+/* NAVBAR */
+
+#img-logo{
+    width: 50px;
+    height: auto;
+}
+#img-shopping-cart{
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+#img-shopping-cart:hover{
+    transform: scale(1.1);
+}
+nav ul li a{
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: black;
+}
+nav ul li a:hover{
+    color: #73aaa3;
+}
+.navbar-toggler{
+    font-size: 30px;
+}
+
+/* BANNER */
+
+.max-height {
+    min-height: calc(100vh - 96px);
+    background: url("./Images/wallpaperGroupCactus.jpg") center/cover fixed no-repeat;
+    position: relative;
+    box-shadow: 3px 5px 6px rgba(204, 204, 204, 0.761);
+    overflow: hidden;
+    margin: 0;
+}
+.banner h1{
+    font-size: 50px;
+}
+.banner h2{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.banner .banner-link:hover{
+    background-color: rgba(255, 255, 255, 0.864);
+}
+
+  /* CART */
+
+.cart{
+    position: absolute; 
+    overflow: hidden;
+    min-height: 10rem;
+    background-color: rgb(229, 238, 236);
+    top: 0;
+    right: -20rem;
+    box-sizing: border-box;
+    width: 20rem;
+    padding: 2rem 1.5rem;
+    transition: all 0.2s ease-in-out;
+}
+.show-cart{
+    right: 0;
+} 
+.cart h3{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.cart a{
+    font-size: 16px;
+    padding: 5px;
+    border: white;
+    background-color: rgb(173, 194, 189);
+    color: black;
+}
+.cart a:hover{
+    color: white;
+    background-color: rgb(117, 136, 131);
+}
+#cart-item-remove{
+    background-color: transparent;
+    color: rgb(173, 194, 189);
+}
+#cart-item-remove:hover{
+    background-color: transparent;
+    color: rgb(96, 107, 105);
+}
+#closeCart{
+    cursor: pointer;
+}
+#item-cart-img{
+    width: 60px;
+    height: auto;
+}
+
+
+/* SECTION A PROPOS */
+
+#about p{
+    font-size: 17px;
+}
+#img-dessin-cactus{
+    width: 70px;
+    height: auto;
+}
+
+/* SLIDER SECTION A PROPOS */
+
+.wrap{
+    position: relative;
+    height: 400px;
+    overflow-x: hidden;
+}
+.slide{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 2px;
+    box-shadow: 3px 5px 6px rgba(204, 204, 204, 0.761);
+}
+.slide1{
+    background-image: url('Images/slide3.jpg')
+}
+.slide2{
+    background-image: url('Images/slide2.jpg')
+}
+.slide3{
+    background-image: url('Images/slide1.jpg')
+}
+.arrow{
+    cursor: pointer;
+    position: absolute;
+    top: 47%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+#arrow-left{
+    border-width: 15px 20px 15px 0;
+    border-color: transparent #eff2ef transparent transparent;
+    left: 30px;
+}
+#arrow-left:hover{
+    border-color: transparent #73aaa3  transparent transparent;
+}
+#arrow-right{
+    border-width: 15px 0 15px 20px;
+    border-color: transparent transparent transparent #eff2ef ;
+    right: 30px;
+}
+#arrow-right:hover{
+    border-color: transparent transparent transparent #73aaa3;
+}
+
+  /* SCROLL BUTTON BACK TO TOP --> TO THE CART */
+
+.scrollTop{
+    position: fixed;
+    bottom: 800px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #ccd6d5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 5;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.scrollTop img{
+    width: 30px;
+    height: 40px;
+}
+.scrollTop.active{
+    bottom: 80px;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* SECTION LE SHOP/STORE */
+
+
+
+#storeHeading{
+    background-color: rgba(217, 225, 228, 0.385);
+    box-shadow: 3px 5px 6px rgba(204, 204, 204, 0.761);
+}
+
+/* FILTER BUTTON */
+
+.btn-cactus-type{
+    border: solid 1px rgba(217, 225, 228, 0.72);
+    box-shadow: 3px 5px 6px rgba(204, 204, 204, 0.761);
+}
+.btn-cactus-type:hover{
+    background-color: rgba(217, 225, 228, 0.652);
+}
+
+
+#store-items{
+    display: flex;
+    justify-content: center;
+}
+.store-item{
+    display: flex;
+    justify-content: center;
+}
+.img-container {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.img-item-store{
+    transition: all 0.7s ease-in-out;
+}
+.img-container:hover .img-item-store {
+    transform: scale(1.2);
+}
+.box-item {
+    box-shadow: 3px 5px 6px rgba(204, 204, 204, 0.761);
+    border-radius: 3px;
+}
+.box-item h5, .box-item h6{
+    font-size: 19px;
+}
+.img-item-store{
+    height: auto;
+}
+
+.img-shopping-cart-mini{
+    width: 0px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: all 0.5s ease-in-out;  
+}
+
+.img-container:hover .img-shopping-cart-mini{
+    width: 50px;
+    padding: 10px;
+} 
+.img-shopping-cart-mini:hover{
+    background-color: rgba(243, 243, 243, 0.734);
+    border-radius: 4px 0 0 0;
+}
+.item-text{
+    display: flex;
+    justify-content: space-between;
+}
+#store-item-price{
+    font-weight: bold;
+}
+
+#infoItemAdded{
+    color: rgb(81, 104, 94);
+    font-weight: 500;
+}
+
+/* FOOTER */
+
+footer{
+    box-shadow: 3px 3px 5px 6px rgba(204, 204, 204, 0.761);
+    background-color: rgba(217, 225, 228, 0.652);
+}
+
+/* Mediaqueries */
+  @media screen and (min-width: 768px){
+    #img-logo{
+        width: 70px;
+    }
+    .max-height {
+        min-height: calc(100vh - 124px);
+    }
+
+    /* section a propos */
+    #about h1{
+        font-size: 26px;
+    }
+    #about p{
+        font-size: 16px;
+    }
+    .banner h1{
+        font-size: 60px;
+    }
+    .banner h2{
+        font-size: 25px;
+    }
+      
+}
+
+  @media screen and (min-width: 992px){
+    #img-dessin-cactus{
+        width: 120px;
+  
+    }
+      /* section a propos */
+    #about h1{
+        font-size: 30px;
+    }
+    #about p{
+        font-size: 17px;
+    }
+    .banner h1{
+        font-size: 70px;
+    }
+
+  }
