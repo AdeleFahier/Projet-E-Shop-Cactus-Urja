@@ -106,8 +106,8 @@ startSlide();
                 cartItem.innerHTML =
                     `<img src="${item.img}" class="img-fluid rounded-lg" id="item-cart-img" alt="photo cactus">
                     <div class="item-text">
-                        <p class="cart-item-name m-0">${item.name}</p>
-                        <span id="cart-item-price" class="cart-item-price">${item.price}</span><span>€</span>
+                        <p class="cart-item-name m-0">${item.name } : </p>
+                        <span id="cart-item-price" class="cart-item-price"> ${ item.price}</span><span>€</span>
                     </div>
                     <a href="#" id='cart-item-remove' class="cart-item-remove">
                         <i class="fas fa-trash"></i>
